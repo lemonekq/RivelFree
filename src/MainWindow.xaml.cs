@@ -58,6 +58,9 @@ namespace RivelFree
             // c#. home home new home is homewindow 😎
             home homewindow = new home();
             homewindow.Show();
+
+            // awful memory leak fix, my bad 😭
+            untiload.Stop();
         }
     }
 }
