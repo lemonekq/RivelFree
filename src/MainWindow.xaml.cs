@@ -53,8 +53,6 @@ namespace RivelFree
         // painful one
         private void untiload_Tick(object sender, EventArgs e)
         {
-            // hide mainwindow
-            this.Hide();
 
             // c#. home home new home is homewindow 😎
             home homewindow = new home();
@@ -62,6 +60,9 @@ namespace RivelFree
 
             // awful memory leak fix, my bad 😭
             untiload.Stop();
+
+            // hide mainwindow
+            this.Close();
         }
     }
 }
