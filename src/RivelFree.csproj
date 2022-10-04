@@ -111,5 +111,20 @@
   <ItemGroup>
     <Resource Include="Network.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Latency.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Cleaner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="System.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Tweaks.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Optimization.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -29,7 +29,8 @@
         <Label x:Name="titlelabel" Content="there goes title" HorizontalAlignment="Left" Margin="45,7,0,0" VerticalAlignment="Top" Foreground="White"/>
         
         
-        <!-- Buttons -->
+                        <!-- Buttons -->
+        <!-- Hardware -->
         <Rectangle Margin="36,66,714,334">
             <Rectangle.Fill>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -41,6 +42,7 @@
         <Image Margin="42,72,720,340" Source="/Hardware.png"/>
         <Label Content="Hardware" HorizontalAlignment="Left" Margin="30,113,0,0" VerticalAlignment="Top" Foreground="White"/>
 
+        <!-- Network -->
         <Rectangle Margin="116,66,634,334">
             <Rectangle.Fill>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -51,5 +53,65 @@
         </Rectangle>
         <Image Margin="122,72,640,340" Source="/Network.png"/>
         <Label Content="Network" HorizontalAlignment="Left" Margin="113,113,0,0" VerticalAlignment="Top" Foreground="White"/>
+
+        <!-- Mouse Latency | Latency -->
+        <Rectangle Margin="36,144,714,256">
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF132950" Offset="0"/>
+                    <GradientStop Color="#FF2C0B54" Offset="1"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Image Margin="42,150,720,262" Source="/Latency.png"/>
+        <Label Content="Latency" HorizontalAlignment="Left" Margin="35,193,0,0" VerticalAlignment="Top" Foreground="White"/>
+
+        <!-- Disk Cleaner | Cleaner -->
+        <Rectangle Margin="116,144,634,256">
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF132950" Offset="0"/>
+                    <GradientStop Color="#FF2C0B54" Offset="1"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Image Margin="122,150,640,262" Source="/Cleaner.png"/>
+        <Label Content="Cleaner" HorizontalAlignment="Left" Margin="116,193,0,0" VerticalAlignment="Top" Foreground="White"/>
+
+        <!-- System -->
+        <Rectangle Margin="36,224,714,176">
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF132950" Offset="0"/>
+                    <GradientStop Color="#FF2C0B54" Offset="1"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Image Margin="42,230,720,182" Source="/System.png"/>
+        <Label Content="System" HorizontalAlignment="Left" Margin="36,274,0,0" VerticalAlignment="Top" Foreground="White"/>
+
+        <!-- Tweaks -->
+        <Rectangle Margin="116,225,634,175">
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF132950" Offset="0"/>
+                    <GradientStop Color="#FF2C0B54" Offset="1"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Image Margin="122,230,640,182" Source="/Tweaks.png"/>
+        <Label Content="Tweaks" HorizontalAlignment="Left" Margin="116,274,0,0" VerticalAlignment="Top" Foreground="White"/>
+
+        <!-- Optimization -->
+        <Rectangle Margin="77,309,673,91">
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF132950" Offset="0"/>
+                    <GradientStop Color="#FF2C0B54" Offset="1"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Image Margin="83,315,679,97" Source="/Optimization.png"/>
+        <Label Content="Optimization" HorizontalAlignment="Left" Margin="63,359,0,0" VerticalAlignment="Top" Foreground="White"/>
     </Grid>
 </Window>
