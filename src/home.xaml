@@ -16,7 +16,7 @@
     <Grid>
         <!-- TabControl. Predictable -->
         <TabControl x:Name="tabcontrolcontainer" Margin="213,10,-10,-11" BorderBrush="{x:Null}">
-            <TabItem Header="TabItem">
+            <TabItem Header="Home">
                 <Grid>
                     <Grid.Background>
                         <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -26,7 +26,74 @@
                     </Grid.Background>
                 </Grid>
             </TabItem>
-            <TabItem Header="TabItem">
+            
+            <TabItem Header="Hardware">
+                <Grid>
+                    <Grid.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FF02030C"/>
+                            <GradientStop Color="#FF010104" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Grid.Background>
+                </Grid>
+            </TabItem>
+            
+            <TabItem Header="Network">
+                <Grid>
+                    <Grid.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FF02030C"/>
+                            <GradientStop Color="#FF010104" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Grid.Background>
+                </Grid>
+            </TabItem>
+            
+            <TabItem Header="Latency">
+                <Grid>
+                    <Grid.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FF02030C"/>
+                            <GradientStop Color="#FF010104" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Grid.Background>
+                </Grid>
+            </TabItem>
+            
+            <TabItem Header="Cleaner">
+                <Grid>
+                    <Grid.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FF02030C"/>
+                            <GradientStop Color="#FF010104" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Grid.Background>
+                </Grid>
+            </TabItem>
+            
+            <TabItem Header="System">
+                <Grid>
+                    <Grid.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FF02030C"/>
+                            <GradientStop Color="#FF010104" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Grid.Background>
+                </Grid>
+            </TabItem>
+            
+            <TabItem Header="Tweaks">
+                <Grid>
+                    <Grid.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FF02030C"/>
+                            <GradientStop Color="#FF010104" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Grid.Background>
+                </Grid>
+            </TabItem>
+            
+            <TabItem Header="Optimization">
                 <Grid>
                     <Grid.Background>
                         <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
