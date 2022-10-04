@@ -16,7 +16,7 @@
     <Grid>
         <!-- DragBar -->
         
-        <Rectangle x:Name="dragbox" HorizontalAlignment="Center" Height="39" VerticalAlignment="Top" Width="800">
+        <Rectangle x:Name="dragbox" HorizontalAlignment="Center" Height="39" VerticalAlignment="Top" Width="800" MouseDown="dragbox_MouseDown">
             <Rectangle.Fill>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#FF02030C"/>

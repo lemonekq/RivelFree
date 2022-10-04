@@ -29,5 +29,13 @@ namespace RivelFree
             this.Title = "RivelFree - " + MainWindow.version;
             titlelabel.Content = "RivelFree - " + MainWindow.version;
         }
+
+        private void dragbox_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            if (e.ChangedButton == MouseButton.Left)
+            {
+                this.DragMove();
+            }
+        }
     }
 }

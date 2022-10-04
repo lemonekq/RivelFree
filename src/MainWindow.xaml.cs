@@ -50,6 +50,7 @@ namespace RivelFree
         }
 
 
+        // painful one
         private void untiload_Tick(object sender, EventArgs e)
         {
             // hide mainwindow
