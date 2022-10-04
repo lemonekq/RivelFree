@@ -1,4 +1,4 @@
-# RivelFree - Alternative to your skiddy shit.
+# RivelFree - Dont pay for FPSBoost scam.
 
 <p align="center">
   <img src="https://github.com/lemonekq/RivelFree/blob/main/res/rounded-128.png">
