@@ -12,7 +12,7 @@ namespace RivelFree
     public partial class MainWindow : Window
     {
         public static string serverinfo = "https://raw.githubusercontent.com/lemonekq/RivelFree/main/res/static.txt";
-        public string version, mustupdate;
+        public static string version, mustupdate;
         private string serverinfoextracted;
 
         DispatcherTimer untiload = new DispatcherTimer();
@@ -46,14 +46,18 @@ namespace RivelFree
             // MessageBox.Show(version); // should return version
             // MessageBox.Show(mustupdate); // should return 0 or 1
 
-            this.Title = "RivelFree - v" + version;
+            this.Title = "RivelFree - " + version;
         }
 
 
         private void untiload_Tick(object sender, EventArgs e)
         {
-            // code goes here
-            this.Close();
+            // hide mainwindow
+            this.Hide();
+
+            // c#. home home new home is homewindow 😎
+            home homewindow = new home();
+            homewindow.Show();
         }
     }
 }
