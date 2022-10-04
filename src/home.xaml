@@ -39,7 +39,7 @@
                 </LinearGradientBrush>
             </Rectangle.Fill>
         </Rectangle>
-        <Image Margin="48,84,714,328" Source="/Hardware.png"/>
+        <Image x:Name="hardwareicon" Margin="48,84,714,328" Source="/Hardware.png"/>
         <Label Content="Hardware" HorizontalAlignment="Left" Margin="36,126,0,0" VerticalAlignment="Top" Foreground="White"/>
 
         <!-- Network -->
@@ -51,7 +51,7 @@
                 </LinearGradientBrush>
             </Rectangle.Fill>
         </Rectangle>
-        <Image Margin="128,84,634,328" Source="/Network.png"/>
+        <Image x:Name="networkicon" Margin="128,84,634,328" Source="/Network.png"/>
         <Label Content="Network" HorizontalAlignment="Left" Margin="119,126,0,0" VerticalAlignment="Top" Foreground="White"/>
 
         <!-- Mouse Latency | Latency -->
@@ -63,7 +63,7 @@
                 </LinearGradientBrush>
             </Rectangle.Fill>
         </Rectangle>
-        <Image Margin="48,162,714,250" Source="/Latency.png"/>
+        <Image x:Name="latencyicon" Margin="48,162,714,250" Source="/Latency.png"/>
         <Label Content="Latency" HorizontalAlignment="Left" Margin="41,206,0,0" VerticalAlignment="Top" Foreground="White"/>
 
         <!-- Disk Cleaner | Cleaner -->
@@ -75,7 +75,7 @@
                 </LinearGradientBrush>
             </Rectangle.Fill>
         </Rectangle>
-        <Image Margin="128,162,634,250" Source="/Cleaner.png"/>
+        <Image x:Name="cleanericon" Margin="128,162,634,250" Source="/Cleaner.png"/>
         <Label Content="Cleaner" HorizontalAlignment="Left" Margin="122,206,0,0" VerticalAlignment="Top" Foreground="White"/>
 
         <!-- System -->
@@ -87,7 +87,7 @@
                 </LinearGradientBrush>
             </Rectangle.Fill>
         </Rectangle>
-        <Image Margin="48,242,714,170" Source="/System.png"/>
+        <Image x:Name="systemicon" Margin="48,242,714,170" Source="/System.png"/>
         <Label Content="System" HorizontalAlignment="Left" Margin="42,286,0,0" VerticalAlignment="Top" Foreground="White"/>
 
         <!-- Tweaks -->
@@ -99,7 +99,7 @@
                 </LinearGradientBrush>
             </Rectangle.Fill>
         </Rectangle>
-        <Image Margin="128,242,634,170" Source="/Tweaks.png"/>
+        <Image x:Name="tweaksicon" Margin="128,242,634,170" Source="/Tweaks.png"/>
         <Label Content="Tweaks" HorizontalAlignment="Left" Margin="122,286,0,0" VerticalAlignment="Top" Foreground="White"/>
 
         <!-- Optimization -->
@@ -111,7 +111,7 @@
                 </LinearGradientBrush>
             </Rectangle.Fill>
         </Rectangle>
-        <Image Margin="89,328,673,84" Source="/Optimization.png"/>
+        <Image x:Name="optimizationicon" Margin="89,328,673,84" Source="/Optimization.png"/>
         <Label Content="Optimization" HorizontalAlignment="Left" Margin="69,372,0,0" VerticalAlignment="Top" Foreground="White"/>
     </Grid>
 </Window>
