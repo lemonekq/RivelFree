@@ -28,6 +28,11 @@ namespace RivelFree
         {
             this.Title = "RivelFree - " + MainWindow.version;
             titlelabel.Content = "RivelFree - " + MainWindow.version;
+
+            // hide tabcontrol
+            Style s = new Style();
+            s.Setters.Add(new Setter(UIElement.VisibilityProperty, Visibility.Collapsed));
+            tabcontrolcontainer.ItemContainerStyle = s;
         }
 
         private void dragbox_MouseDown(object sender, MouseButtonEventArgs e)
@@ -36,6 +41,12 @@ namespace RivelFree
             {
                 this.DragMove();
             }
+        }
+
+        private void Image_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            // ez
+            this.Close();
         }
     }
 }

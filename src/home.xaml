@@ -14,8 +14,31 @@
         </LinearGradientBrush>
     </Window.Background>
     <Grid>
-        <!-- DragBar -->
+        <!-- TabControl. Predictable -->
+        <TabControl x:Name="tabcontrolcontainer" Margin="213,10,-10,-11" BorderBrush="{x:Null}">
+            <TabItem Header="TabItem">
+                <Grid>
+                    <Grid.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FF02030C"/>
+                            <GradientStop Color="#FF010104" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Grid.Background>
+                </Grid>
+            </TabItem>
+            <TabItem Header="TabItem">
+                <Grid>
+                    <Grid.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FF02030C"/>
+                            <GradientStop Color="#FF010104" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Grid.Background>
+                </Grid>
+            </TabItem>
+        </TabControl>
 
+        <!-- DragBar -->
         <Rectangle x:Name="dragbox" HorizontalAlignment="Center" Height="39" VerticalAlignment="Top" Width="800" MouseDown="dragbox_MouseDown">
             <Rectangle.Fill>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -24,7 +47,7 @@
                 </LinearGradientBrush>
             </Rectangle.Fill>
         </Rectangle>
-
+        <Image HorizontalAlignment="Left" Height="20" Margin="767,10,0,0" VerticalAlignment="Top" Width="20" Source="/Close.png" MouseDown="Image_MouseDown"/>
         <Image HorizontalAlignment="Left" Height="40" VerticalAlignment="Top" Width="70" Source="/rounded-720.png"/>
         <Label x:Name="titlelabel" Content="there goes title" HorizontalAlignment="Left" Margin="45,7,0,0" VerticalAlignment="Top" Foreground="White"/>
 
