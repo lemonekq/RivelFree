@@ -59,7 +59,7 @@
                         </Label.Effect>
                     </Label>
                     <Label x:Name="ramlabel" Content="[&lt;ramsize&gt;] [&lt;mhz&gt;]" HorizontalAlignment="Left" Margin="60,112,0,0" VerticalAlignment="Top" Foreground="White" Width="527" Height="25"/>
-                    <Button Content="Optimize Cores" Margin="0,142,195,0" VerticalAlignment="Top" Height="33" HorizontalAlignment="Right" Width="218" BorderBrush="Black" Foreground="White">
+                    <Button x:Name="coreoptimizebutton" Content="Optimize Cores" Margin="0,142,195,0" VerticalAlignment="Top" Height="33" HorizontalAlignment="Right" Width="218" BorderBrush="Black" Foreground="White" Click="Button_Click">
 
                         <Button.Resources>
                             <Style TargetType="Border">
