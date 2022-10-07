@@ -44,21 +44,35 @@
                     <Label x:Name="cpulabel" Content="Intel/AMD [&lt;version&gt;] [&lt;address&gt;] [&lt;cores&gt;]c/[&lt;threads&gt;]t @ [&lt;ghz/mhz&gt;]" HorizontalAlignment="Left" Margin="54,73,0,0" VerticalAlignment="Top" Foreground="White" Width="527" Height="25"/>
                     <Label Content="CPU:" HorizontalAlignment="Left" Margin="22,73,0,0" VerticalAlignment="Top" Foreground="White">
                         <Label.Effect>
-                            <DropShadowEffect Color="White" BlurRadius="15" Direction="0" ShadowDepth="0"/>
+                            <DropShadowEffect Color="White" BlurRadius="35" Direction="0" ShadowDepth="0"/>
                         </Label.Effect>
                     </Label>
                     <Label Content="GPU:" HorizontalAlignment="Left" Margin="22,92,0,0" VerticalAlignment="Top" Foreground="White">
                         <Label.Effect>
-                            <DropShadowEffect Color="White" BlurRadius="15" Direction="0" ShadowDepth="0"/>
+                            <DropShadowEffect Color="White" BlurRadius="35" Direction="0" ShadowDepth="0"/>
                         </Label.Effect>
                     </Label>
                     <Label x:Name="gpulabel" Content="Nvidia Hooyforce [&lt;model&gt;] [&lt;vram&gt;]" HorizontalAlignment="Left" Margin="54,93,0,0" VerticalAlignment="Top" Foreground="White" Width="527" Height="25"/>
                     <Label Content="RAM:" HorizontalAlignment="Left" Margin="22,112,0,0" VerticalAlignment="Top" Foreground="White">
                         <Label.Effect>
-                            <DropShadowEffect Color="White" BlurRadius="15" Direction="0" ShadowDepth="0"/>
+                            <DropShadowEffect Color="White" BlurRadius="35" Direction="0" ShadowDepth="0"/>
                         </Label.Effect>
                     </Label>
                     <Label x:Name="ramlabel" Content="[&lt;ramsize&gt;] [&lt;mhz&gt;]" HorizontalAlignment="Left" Margin="60,112,0,0" VerticalAlignment="Top" Foreground="White" Width="527" Height="25"/>
+                    <Button Content="Optimize Cores" Margin="0,142,195,0" VerticalAlignment="Top" Height="33" HorizontalAlignment="Right" Width="218" BorderBrush="Black" Foreground="White">
+
+                        <Button.Resources>
+                            <Style TargetType="Border">
+                                <Setter Property="CornerRadius" Value="5"/>
+                            </Style>
+                        </Button.Resources>
+                        <Button.Background>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="#FF1B0A35"/>
+                                <GradientStop Color="#FF0A1023" Offset="1"/>
+                            </LinearGradientBrush>
+                        </Button.Background>
+                    </Button>
                 </Grid>
             </TabItem>
 
