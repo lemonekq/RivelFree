@@ -172,7 +172,7 @@
                 <DropShadowEffect Color="White" BlurRadius="40" Opacity="0.5" Direction="0"/>
             </Image.Effect>
         </Image>
-        <Label Content="Hardware" HorizontalAlignment="Left" Margin="36,126,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Label x:Name="hardwaretitle" Content="Hardware" HorizontalAlignment="Left" Margin="36,126,0,0" VerticalAlignment="Top" Foreground="White"/>
 
         <!-- Network -->
         <Rectangle Margin="122,78,628,322">
@@ -188,7 +188,7 @@
                 <DropShadowEffect Color="White" BlurRadius="40" Opacity="0.5" Direction="0"/>
             </Image.Effect>
         </Image>
-        <Label Content="Network" HorizontalAlignment="Left" Margin="119,126,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Label x:Name="networktitle" Content="Network" HorizontalAlignment="Left" Margin="119,126,0,0" VerticalAlignment="Top" Foreground="White"/>
 
         <!-- Mouse Latency | Latency -->
         <Rectangle Margin="42,156,708,244">
@@ -204,7 +204,7 @@
                 <DropShadowEffect Color="White" BlurRadius="40" Opacity="0.5" Direction="0"/>
             </Image.Effect>
         </Image>
-        <Label Content="Latency" HorizontalAlignment="Left" Margin="41,206,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Label x:Name="latencytitle" Content="Latency" HorizontalAlignment="Left" Margin="41,206,0,0" VerticalAlignment="Top" Foreground="White"/>
 
         <!-- Disk Cleaner | Cleaner -->
         <Rectangle Margin="122,156,628,244">
@@ -220,7 +220,7 @@
                 <DropShadowEffect Color="White" BlurRadius="40" Opacity="0.5" Direction="0"/>
             </Image.Effect>
         </Image>
-        <Label Content="Cleaner" HorizontalAlignment="Left" Margin="122,206,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Label x:Name="cleanertitle" Content="Cleaner" HorizontalAlignment="Left" Margin="122,206,0,0" VerticalAlignment="Top" Foreground="White"/>
 
         <!-- System -->
         <Rectangle Margin="42,236,708,164">
@@ -236,7 +236,7 @@
                 <DropShadowEffect Color="White" BlurRadius="40" Opacity="0.5" Direction="0"/>
             </Image.Effect>
         </Image>
-        <Label Content="System" HorizontalAlignment="Left" Margin="42,286,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Label x:Name="systemtitle" Content="System" HorizontalAlignment="Left" Margin="42,286,0,0" VerticalAlignment="Top" Foreground="White"/>
 
         <!-- Tweaks -->
         <Rectangle Margin="122,238,628,162">
@@ -252,7 +252,7 @@
                 <DropShadowEffect Color="White" BlurRadius="40" Opacity="0.5" Direction="0"/>
             </Image.Effect>
         </Image>
-        <Label Content="Tweaks" HorizontalAlignment="Left" Margin="122,286,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Label x:Name="tweakstitle" Content="Tweaks" HorizontalAlignment="Left" Margin="122,286,0,0" VerticalAlignment="Top" Foreground="White"/>
 
         <!-- Optimization -->
         <Rectangle Margin="83,322,667,78">
@@ -268,6 +268,6 @@
                 <DropShadowEffect Color="White" BlurRadius="40" Opacity="0.5" Direction="0"/>
             </Image.Effect>
         </Image>
-        <Label Content="Optimization" HorizontalAlignment="Left" Margin="69,372,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Label x:Name="optimization" Content="Optimization" HorizontalAlignment="Left" Margin="69,372,0,0" VerticalAlignment="Top" Foreground="White"/>
     </Grid>
 </Window>

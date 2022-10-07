@@ -1,9 +1,8 @@
 ﻿using System;
 using System.Management;
-using System.Runtime.Remoting.Messaging;
 using System.Windows;
 using System.Windows.Input;
-using System.Windows.Markup;
+using System.Windows.Media;
 
 namespace RivelFree
 {
@@ -33,6 +32,7 @@ namespace RivelFree
             tabcontrolcontainer.ItemContainerStyle = s;
 
             getpcinfo();
+            switchwindow(1);
         }
 
         private void dragbox_MouseDown(object sender, MouseButtonEventArgs e)
@@ -107,6 +107,70 @@ namespace RivelFree
                 // maybe custom messagebox if the program will grow
                 MessageBox.Show("You cannot open two forms!");
             }
+        }
+
+        // windowswitcher !-!!-!!-!!-!!-!!-! 1-7/0-6 | messy code warning 🎇
+        public void switchwindow(int window)
+        {
+            if (window == 1)
+            {
+                tabcontrolcontainer.SelectedIndex = 0;
+                cleantext();
+                hardwaretitle.Foreground = System.Windows.Media.Brushes.IndianRed;
+            }
+
+            if (window == 2)
+            {
+                tabcontrolcontainer.SelectedIndex = 1;
+                cleantext();
+                hardwaretitle.Foreground = System.Windows.Media.Brushes.IndianRed;
+            }
+
+            if (window == 3)
+            {
+                tabcontrolcontainer.SelectedIndex = 2;
+                cleantext();
+                hardwaretitle.Foreground = System.Windows.Media.Brushes.IndianRed;
+            }
+
+            if (window == 4)
+            {
+                tabcontrolcontainer.SelectedIndex = 3;
+                cleantext();
+                hardwaretitle.Foreground = System.Windows.Media.Brushes.IndianRed;
+            }
+
+            if (window == 5)
+            {
+                tabcontrolcontainer.SelectedIndex = 4;
+                cleantext();
+                hardwaretitle.Foreground = System.Windows.Media.Brushes.IndianRed;
+            }
+
+            if (window == 6)
+            {
+                tabcontrolcontainer.SelectedIndex = 5;
+                cleantext();
+                hardwaretitle.Foreground = System.Windows.Media.Brushes.IndianRed;
+            }
+
+            if (window == 7)
+            {
+                tabcontrolcontainer.SelectedIndex = 6;
+                cleantext();
+                hardwaretitle.Foreground = System.Windows.Media.Brushes.IndianRed;
+            }
+        }
+
+        void cleantext()
+        {
+            hardwaretitle.Foreground = System.Windows.Media.Brushes.White;
+            networktitle.Foreground = System.Windows.Media.Brushes.White;
+            latencytitle.Foreground = System.Windows.Media.Brushes.White;
+            cleanertitle.Foreground = System.Windows.Media.Brushes.White;
+            systemtitle.Foreground = System.Windows.Media.Brushes.White;
+            tweakstitle.Foreground = System.Windows.Media.Brushes.White;
+            optimizationtitle.Foreground = System.Windows.Media.Brushes.White;
         }
 
         // i will update it later for ddr5
