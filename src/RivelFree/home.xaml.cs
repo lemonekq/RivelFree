@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Management;
+using System.Runtime.Remoting.Messaging;
 using System.Windows;
 using System.Windows.Input;
 using System.Windows.Markup;
@@ -120,6 +121,6 @@ namespace RivelFree
                     else
                         return "Other";
             }
-        } 
+        }
     }
 }
