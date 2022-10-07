@@ -24,7 +24,7 @@ namespace RivelFree
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            // wait 5s until main form
+            // wait 3s until main form
             untiload.Tick += untiload_Tick;
             untiload.Interval = new TimeSpan(0, 0, 3);
             untiload.Start();
