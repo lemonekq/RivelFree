@@ -123,42 +123,42 @@ namespace RivelFree
             {
                 tabcontrolcontainer.SelectedIndex = 1;
                 cleantext();
-                hardwaretitle.Foreground = System.Windows.Media.Brushes.IndianRed;
+                networktitle.Foreground = System.Windows.Media.Brushes.IndianRed;
             }
 
             if (window == 3)
             {
                 tabcontrolcontainer.SelectedIndex = 2;
                 cleantext();
-                hardwaretitle.Foreground = System.Windows.Media.Brushes.IndianRed;
+                latencytitle.Foreground = System.Windows.Media.Brushes.IndianRed;
             }
 
             if (window == 4)
             {
                 tabcontrolcontainer.SelectedIndex = 3;
                 cleantext();
-                hardwaretitle.Foreground = System.Windows.Media.Brushes.IndianRed;
+                cleanertitle.Foreground = System.Windows.Media.Brushes.IndianRed;
             }
 
             if (window == 5)
             {
                 tabcontrolcontainer.SelectedIndex = 4;
                 cleantext();
-                hardwaretitle.Foreground = System.Windows.Media.Brushes.IndianRed;
+                systemtitle.Foreground = System.Windows.Media.Brushes.IndianRed;
             }
 
             if (window == 6)
             {
                 tabcontrolcontainer.SelectedIndex = 5;
                 cleantext();
-                hardwaretitle.Foreground = System.Windows.Media.Brushes.IndianRed;
+                tweakstitle.Foreground = System.Windows.Media.Brushes.IndianRed;
             }
 
             if (window == 7)
             {
                 tabcontrolcontainer.SelectedIndex = 6;
                 cleantext();
-                hardwaretitle.Foreground = System.Windows.Media.Brushes.IndianRed;
+                optimizationtitle.Foreground = System.Windows.Media.Brushes.IndianRed;
             }
         }
 
@@ -171,6 +171,41 @@ namespace RivelFree
             systemtitle.Foreground = System.Windows.Media.Brushes.White;
             tweakstitle.Foreground = System.Windows.Media.Brushes.White;
             optimizationtitle.Foreground = System.Windows.Media.Brushes.White;
+        }
+
+        private void hardwaretitle_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            switchwindow(1);
+        }
+
+        private void networktitle_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            switchwindow(2);
+        }
+
+        private void latencytitle_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            switchwindow(3);
+        }
+
+        private void cleanertitle_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            switchwindow(4);
+        }
+
+        private void systemtitle_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            switchwindow(5);
+        }
+
+        private void tweakstitle_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            switchwindow(6);
+        }
+
+        private void optimizationtitle_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            switchwindow(7);
         }
 
         // i will update it later for ddr5
