@@ -24,8 +24,8 @@
                             <GradientStop Color="#FF010104" Offset="1"/>
                         </LinearGradientBrush>
                     </Grid.Background>
-                    <Label Content="Your Hardware" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Foreground="White" FontSize="24"/>
-                    <Rectangle HorizontalAlignment="Left" Height="100" Margin="118,-2,0,0" VerticalAlignment="Top" Width="6" RenderTransformOrigin="0.5,0.5">
+                    <Label Content="Your Hardware" HorizontalAlignment="Left" Margin="10,31,0,0" VerticalAlignment="Top" Foreground="White" FontSize="24" RenderTransformOrigin="0.495,0.68"/>
+                    <Rectangle HorizontalAlignment="Left" Height="100" Margin="118,20,0,0" VerticalAlignment="Top" Width="6" RenderTransformOrigin="0.5,0.5">
                         <Rectangle.Fill>
                             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                                 <GradientStop Color="#FF681B75"/>
