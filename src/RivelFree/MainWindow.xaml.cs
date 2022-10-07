@@ -42,6 +42,11 @@ namespace RivelFree
             version = version.Substring(8);
             mustupdate = mustupdate.Substring(7);
 
+            if (Int32.Parse(mustupdate) == 1)
+            {
+                MessageBox.Show("You should update your version for new features! github.com/lemonekq/rivalfree")
+            } 
+
             // only for testing
             // MessageBox.Show(version); // should return version
             // MessageBox.Show(mustupdate); // should return 0 or 1
