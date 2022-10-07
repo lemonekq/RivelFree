@@ -269,5 +269,26 @@
             </Image.Effect>
         </Image>
         <Label Content="Optimization" HorizontalAlignment="Left" Margin="69,372,0,0" VerticalAlignment="Top" Foreground="White"/>
+
+        <!-- AlertBox rectangle -->
+        <Rectangle x:Name="alertbox" HorizontalAlignment="Left" Height="39" Margin="559,393,0,0" VerticalAlignment="Top" Width="228" RadiusX="8.75" RadiusY="8.75">
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF441616" Offset="0.004"/>
+                    <GradientStop Color="#FF251E1E" Offset="1"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Label x:Name="alertheader" Content="Alert" HorizontalAlignment="Left" Margin="655,390,0,0" VerticalAlignment="Top" Foreground="White">
+            <Label.Effect>
+                <DropShadowEffect Color="White" BlurRadius="15" RenderingBias="Performance" Direction="0" ShadowDepth="0" Opacity="0.45"/>
+            </Label.Effect>
+        </Label>
+        <Label x:Name="alertcontent" Content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel metus" HorizontalAlignment="Left" Margin="562,408,0,0" VerticalAlignment="Top" FontSize="9" Foreground="White" Width="222" Height="22">
+            <Label.Effect>
+                <DropShadowEffect Color="White" BlurRadius="15" RenderingBias="Performance" Direction="0" ShadowDepth="0" Opacity="0.45"/>
+            </Label.Effect>
+        </Label>
+        <!-- End of alertbox -->
     </Grid>
 </Window>

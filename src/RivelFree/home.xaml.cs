@@ -96,7 +96,13 @@ namespace RivelFree
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             corepark cp = new corepark(); // c# progres day 69420: object reference is not instance of an object.
-            cp.Show();
+            if (cp.IsActive == false)
+            {
+                cp.Show();
+            } else
+            {
+                // custom messagebox
+            }
         }
 
         // i will update it later for ddr5
