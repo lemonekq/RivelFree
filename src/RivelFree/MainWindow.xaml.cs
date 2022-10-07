@@ -44,7 +44,7 @@ namespace RivelFree
 
             if (Int32.Parse(mustupdate) == 1)
             {
-                MessageBox.Show("You should update your version for new features! github.com/lemonekq/rivalfree")
+                MessageBox.Show("You should update your version for new features! github.com/lemonekq/rivalfree");
             } 
 
             // only for testing
