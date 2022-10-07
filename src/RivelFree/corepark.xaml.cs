@@ -23,5 +23,10 @@ namespace RivelFree
         {
             InitializeComponent();
         }
+
+        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            home.isactivecore = false; // switch
+        }
     }
 }

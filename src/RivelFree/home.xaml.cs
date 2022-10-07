@@ -15,6 +15,7 @@ namespace RivelFree
         // variables
         private string cpuname, cpucores;
         private float ramfloat;
+        public static bool isactivecore;
 
         public home()
         {
@@ -97,12 +98,14 @@ namespace RivelFree
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             corepark cp = new corepark(); // c# progres day 69420: object reference is not instance of an object.
-            if (cp.IsActive == false)
+            if (isactivecore == false)
             {
                 cp.Show();
+                isactivecore = true;
             } else
             {
-                // custom messagebox
+                // maybe custom messagebox if the program will grow
+                MessageBox.Show("You cannot open two forms!");
             }
         }
 
