@@ -98,16 +98,7 @@ namespace RivelFree
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            corepark cp = new corepark(); // c# progres day 69420: object reference is not instance of an object.
-            if (isactivecore == false)
-            {
-                cp.Show();
-                isactivecore = true;
-            } else
-            {
-                // maybe custom messagebox if the program will grow
-                MessageBox.Show("You cannot open two forms!");
-            }
+            // simplify
         }
 
         // windowswitcher !-!!-!!-!!-!!-!!-! 1-7/0-6 | messy code warning 🎇
