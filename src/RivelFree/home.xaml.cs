@@ -3,7 +3,6 @@ using System.IO;
 using System.Management;
 using System.Windows;
 using System.Windows.Input;
-using System.Windows.Media;
 
 namespace RivelFree
 {
@@ -90,7 +89,7 @@ namespace RivelFree
                 {
                     // cut the float, this isnt the pi number LOL
                     ramfloat = (float)(Ram_Bytes / 1073741824);
-                    ramfloat = (float)System.Math.Round(ramfloat, 2);
+                    ramfloat = (float)Math.Round(ramfloat, 2);
                     ramlabel.Content = (string)ramfloat.ToString() + "GB / " + GetMemoryType(Int32.Parse(queryObj["MemoryType"].ToString()));
                 }
             }
@@ -191,7 +190,7 @@ namespace RivelFree
                     return "DDR-3";
                 default:
                     if (MemoryType == 0 || MemoryType > 22)
-                        return "DDR-4-5";
+                        return "DDR-4";
                     else
                         return "Other";
             }
