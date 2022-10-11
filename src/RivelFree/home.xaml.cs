@@ -1,6 +1,7 @@
 ﻿using System;
 using System.IO;
 using System.Management;
+using System.Net;
 using System.Windows;
 using System.Windows.Input;
 
@@ -98,10 +99,13 @@ namespace RivelFree
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             // simplify
-
+            using (var client = new WebClient())
+            {
+                client.DownloadFile("https://raw.githubusercontent.com/lemonekq/RivelFree/main/reg/performance/cpu.pow", "cpu.pow");
+            }
         }
 
-        // windowswitcher !-!!-!!-!!-!!-!!-! 1-7/0-6 | messy code warning 🎇
+        // windowswitcher 1-7/0-6 | messy code warning 🎇
         public void switchwindow(int window)
         {
             if (window == 1)
