@@ -98,6 +98,7 @@ namespace RivelFree
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             // simplify
+
         }
 
         // windowswitcher !-!!-!!-!!-!!-!!-! 1-7/0-6 | messy code warning 🎇
