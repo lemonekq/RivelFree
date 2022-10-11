@@ -24,7 +24,7 @@
                             <GradientStop Color="#FF010104" Offset="1"/>
                         </LinearGradientBrush>
                     </Grid.Background>
-                    <Label Content="Your Hardware" HorizontalAlignment="Left" Margin="10,31,0,0" VerticalAlignment="Top" Foreground="White" FontSize="24" RenderTransformOrigin="0.495,0.68"/>
+                    <Label Content="Your Hardware" HorizontalAlignment="Left" Margin="10,30,0,0" VerticalAlignment="Top" Foreground="White" FontSize="24" RenderTransformOrigin="0.495,0.68"/>
                     <Rectangle HorizontalAlignment="Left" Height="100" Margin="118,20,0,0" VerticalAlignment="Top" Width="6" RenderTransformOrigin="0.5,0.5">
                         <Rectangle.Fill>
                             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -117,6 +117,34 @@
                             <GradientStop Color="#FF010104" Offset="1"/>
                         </LinearGradientBrush>
                     </Grid.Background>
+                    <Button x:Name="disableuacbutton" Content="Disable UAC (Administrator confirm popup)" Margin="0,30,295,0" VerticalAlignment="Top" Height="33" HorizontalAlignment="Right" Width="286" BorderBrush="Black" Foreground="White" Click="disableuacbutton_Click">
+
+                        <Button.Resources>
+                            <Style TargetType="{x:Type Border}">
+                                <Setter Property="CornerRadius" Value="8"/>
+                            </Style>
+                        </Button.Resources>
+                        <Button.Background>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="#FF1B0A35"/>
+                                <GradientStop Color="#FF0A1023" Offset="1"/>
+                            </LinearGradientBrush>
+                        </Button.Background>
+                    </Button>
+                    <Button x:Name="disablewindowsupdate" Content="Disable Windows Update" Margin="0,30,133,0" VerticalAlignment="Top" Height="33" HorizontalAlignment="Right" Width="157" BorderBrush="Black" Foreground="White" Click="disablewindowsupdate_Click">
+
+                        <Button.Resources>
+                            <Style TargetType="{x:Type Border}">
+                                <Setter Property="CornerRadius" Value="8"/>
+                            </Style>
+                        </Button.Resources>
+                        <Button.Background>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="#FF1B0A35"/>
+                                <GradientStop Color="#FF0A1023" Offset="1"/>
+                            </LinearGradientBrush>
+                        </Button.Background>
+                    </Button>
                 </Grid>
             </TabItem>
 

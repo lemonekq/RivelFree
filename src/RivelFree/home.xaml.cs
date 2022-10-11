@@ -1,7 +1,9 @@
 ﻿using System;
+using System.Diagnostics;
 using System.IO;
 using System.Management;
 using System.Net;
+using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Input;
 
@@ -101,7 +103,11 @@ namespace RivelFree
             // simplify
             using (var client = new WebClient())
             {
-                client.DownloadFile("https://raw.githubusercontent.com/lemonekq/RivelFree/main/reg/performance/cpu.pow", "cpu.pow");
+                client.DownloadFile("https://raw.githubusercontent.com/lemonekq/RivelFree/main/reg/performance/cpu.pow", MainWindow.tempdir + "cpu.pow");
+            }
+            if (File.Exists(MainWindow.tempdir + "cpu.pow"))
+            {
+                Process.Start("powercfg", @"-import" + '"' + MainWindow.tempdir + "cpu.pow" + '"' + " 000eb144-c3ae-4396-b3f9-556c2c65869a");
             }
         }
 
@@ -184,7 +190,31 @@ namespace RivelFree
             Directory.Delete(MainWindow.tempdir, true);
         }
 
-        // i will update it later for ddr5
+        private void disableuacbutton_Click(object sender, RoutedEventArgs e)
+        {
+            // simple reg
+            Process.Start("reg.exe", "ADD HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System /v EnableLUA /t REG_DWORD /d 0 /f");
+        }
+
+        private void disablewindowsupdate_Click(object sender, RoutedEventArgs e)
+        {
+            // ignore the jumping cmds around the screen for a while lol
+            // diable services 
+            Process.Start("net.exe", "stop wuauserv"); 
+            Process.Start("net.exe", "stop UsoSvc");
+            // apply regs
+            Process.Start("reg.exe", "add \"HKLM\\SOFTWARE\\Policies\\Microsoft\\Windows\\WindowsUpdate\" /v \"DoNotConnectToWindowsUpdateInternetLocations\" /t REG_DWORD /d \"1\" /f");
+            Process.Start("reg.exe", "add \"HKLM\\SOFTWARE\\Policies\\Microsoft\\Windows\\WindowsUpdate\" /v \"SetDisableUXWUAccess\" /t REG_DWORD /d \"1\" /f");
+            Process.Start("reg.exe", "add \"HKLM\\SOFTWARE\\Policies\\Microsoft\\Windows\\WindowsUpdate\\AU\" /v \"NoAutoUpdate\" /t REG_DWORD /d \"1\" /f");
+            Process.Start("reg.exe", "add \"HKLM\\SOFTWARE\\Policies\\Microsoft\\Windows\\WindowsUpdate\" /v \"ExcludeWUDriversInQualityUpdate\" /t REG_DWORD /d \"1\" /f");
+            // final
+            Process.Start("gpupdate", "/force");
+            // enable services 
+            Process.Start("net.exe", "start wuauserv"); 
+            Process.Start("net.exe", "start UsoSvc");
+        }
+
+        // if someone has ddr5 for testing, dm me!
         public string GetMemoryType(int MemoryType)
         {
             switch (MemoryType)
