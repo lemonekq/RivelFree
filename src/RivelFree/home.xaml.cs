@@ -188,8 +188,12 @@ namespace RivelFree
                     return "DDR-2";
                 case 21:
                     return "DDR-3";
+                case 22:
+                    return "DDR-4";
+                case 23:
+                    return "DDR-5";
                 default:
-                    if (MemoryType == 0 || MemoryType > 22)
+                    if (MemoryType == 0)
                         return "DDR-4";
                     else
                         return "Other";
