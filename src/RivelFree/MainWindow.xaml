@@ -1,0 +1,52 @@
+﻿<Window x:Class="RivelFree.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RivelFree"
+        mc:Ignorable="d"
+        Title="RivelFree" Height="350" Width="383" Loaded="Window_Loaded" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Icon="/rounded-720.png" WindowStyle="None">
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="Black"/>
+            <GradientStop Color="#FF151515" Offset="1"/>
+        </LinearGradientBrush>
+    </Window.Background>
+    
+    
+    <Grid>
+        <Rectangle x:Name="Rectbg" HorizontalAlignment="Center" Height="350" VerticalAlignment="Center" Width="383">
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF1A35CA"/>
+                    <GradientStop Color="#FFCD21EA" Offset="1"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+
+            <Rectangle.Triggers>
+                <EventTrigger RoutedEvent="Window.Loaded">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <Storyboard x:Name="load">
+                                <DoubleAnimation From="0" To="350" Duration="00:00:3" 
+                                    Storyboard.TargetName="Rectbg" 
+                                    Storyboard.TargetProperty="Height">
+                                    <DoubleAnimation.EasingFunction>
+                                        <CubicEase EasingMode="EaseOut"></CubicEase>
+                                    </DoubleAnimation.EasingFunction>
+                                </DoubleAnimation>
+                            </Storyboard>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Rectangle.Triggers>
+        </Rectangle>
+        <Image Source="/rounded-720.png" Margin="88,64,88,63">
+            <Image.Effect>
+                <DropShadowEffect BlurRadius="100"/>
+            </Image.Effect>
+        </Image>
+    </Grid>
+    
+    
+</Window>
