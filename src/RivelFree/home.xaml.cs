@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Management;
 using System.Windows;
 using System.Windows.Input;
@@ -173,39 +174,19 @@ namespace RivelFree
             optimizationtitle.Foreground = System.Windows.Media.Brushes.White;
         }
 
-        private void hardwaretitle_MouseDown(object sender, MouseButtonEventArgs e)
-        {
-            switchwindow(1);
-        }
+        // ignore the spaghetti
+        private void hardwaretitle_MouseDown(object sender, MouseButtonEventArgs e) { switchwindow(1); }
+        private void networktitle_MouseDown(object sender, MouseButtonEventArgs e) { switchwindow(2); }
+        private void latencytitle_MouseDown(object sender, MouseButtonEventArgs e) { switchwindow(3); }
+        private void cleanertitle_MouseDown(object sender, MouseButtonEventArgs e) { switchwindow(4); }
+        private void systemtitle_MouseDown(object sender, MouseButtonEventArgs e) { switchwindow(5); }
+        private void tweakstitle_MouseDown(object sender, MouseButtonEventArgs e) { switchwindow(6); }
+        private void optimizationtitle_MouseDown(object sender, MouseButtonEventArgs e) { switchwindow(7); }
 
-        private void networktitle_MouseDown(object sender, MouseButtonEventArgs e)
+        private void Window_Closed(object sender, EventArgs e)
         {
-            switchwindow(2);
-        }
-
-        private void latencytitle_MouseDown(object sender, MouseButtonEventArgs e)
-        {
-            switchwindow(3);
-        }
-
-        private void cleanertitle_MouseDown(object sender, MouseButtonEventArgs e)
-        {
-            switchwindow(4);
-        }
-
-        private void systemtitle_MouseDown(object sender, MouseButtonEventArgs e)
-        {
-            switchwindow(5);
-        }
-
-        private void tweakstitle_MouseDown(object sender, MouseButtonEventArgs e)
-        {
-            switchwindow(6);
-        }
-
-        private void optimizationtitle_MouseDown(object sender, MouseButtonEventArgs e)
-        {
-            switchwindow(7);
+            // temp cleanup
+            Directory.Delete(MainWindow.tempdir, true);
         }
 
         // i will update it later for ddr5

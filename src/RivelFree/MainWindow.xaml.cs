@@ -53,10 +53,19 @@ namespace RivelFree
             // MessageBox.Show(mustupdate); // should return 0 or 1
 
             this.Title = "RivelFree - " + version;
-
-            tempdir = Path.GetTempPath();
+            tempdir = System.IO.Path.GetTempPath() + "/RivelFree/";
+            CreateFolder(tempdir); // .
+            Directory.Delete(tempdir, true);
+            CreateFolder(tempdir);
         }
 
+        public void CreateFolder(string path)
+        {
+            if (!Directory.Exists(path))
+            {
+                Directory.CreateDirectory(path);
+            }
+        }
 
         // painful one
         private void untiload_Tick(object sender, EventArgs e)

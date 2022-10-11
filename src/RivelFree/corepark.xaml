@@ -13,7 +13,7 @@
                 <GradientStop Color="#FF071005" Offset="1"/>
             </LinearGradientBrush>
         </Grid.Background>
-        <Label Content="CoreParker" Margin="0,32,0,0" VerticalAlignment="Top" Foreground="White" FontSize="36" HorizontalAlignment="Center" Width="184"/>
+        <Label Content="CoreParker" Margin="0,30,0,0" VerticalAlignment="Top" Foreground="White" FontSize="36" HorizontalAlignment="Center" Width="184"/>
 
     </Grid>
 </Window>
