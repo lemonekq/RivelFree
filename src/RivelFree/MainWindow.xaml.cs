@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Net;
 using System.Windows;
 using System.Windows.Threading;
@@ -12,7 +13,7 @@ namespace RivelFree
     public partial class MainWindow : Window
     {
         public static string serverinfo = "https://raw.githubusercontent.com/lemonekq/RivelFree/main/res/static.txt";
-        public static string version, mustupdate;
+        public static string version, mustupdate, tempdir;
         private string serverinfoextracted;
 
         DispatcherTimer untiload = new DispatcherTimer();
@@ -52,6 +53,8 @@ namespace RivelFree
             // MessageBox.Show(mustupdate); // should return 0 or 1
 
             this.Title = "RivelFree - " + version;
+
+            tempdir = Path.GetTempPath();
         }
 
 
