@@ -227,6 +227,25 @@ namespace RivelFree
             if (cleanerlog.IsChecked == false & cleanertemp.IsChecked == false & cleanercache.IsChecked == false)
             {
                 MessageBox.Show("You need to check files for this action.");
+            } else
+            {
+                // main code::clean logs
+                if (cleanerlog.IsChecked == true)
+                {
+
+                }
+
+                // clean temp
+                if (cleanertemp.IsChecked == true)
+                {
+
+                }
+
+                // clean cache
+                if (cleanercache.IsChecked == true)
+                {
+
+                }
             }
         }
 
