@@ -70,7 +70,7 @@
                             </Style>
                         </Button.Resources>
                         <Button.Effect>
-                            <DropShadowEffect Color="#FF090038" BlurRadius="15" Direction="0" ShadowDepth="0"/>
+                            <DropShadowEffect Color="#FF160086" BlurRadius="50" Direction="0" ShadowDepth="0"/>
                         </Button.Effect>
                         <Button.Background>
                             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -130,6 +130,9 @@
                                 <Setter Property="CornerRadius" Value="8"/>
                             </Style>
                         </Button.Resources>
+                        <Button.Effect>
+                            <DropShadowEffect Color="#FF160086" BlurRadius="50" Direction="0" ShadowDepth="0"/>
+                        </Button.Effect>
                         <Button.Background>
                             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                                 <GradientStop Color="#FF1B0A35"/>
@@ -138,7 +141,9 @@
                         </Button.Background>
                     </Button>
                     <Button x:Name="disablewindowsupdate" Content="Disable Windows Update" Margin="0,30,133,0" VerticalAlignment="Top" Height="33" HorizontalAlignment="Right" Width="157" BorderBrush="Black" Foreground="White" Click="disablewindowsupdate_Click">
-
+                        <Button.Effect>
+                            <DropShadowEffect Color="#FF160086" BlurRadius="50" Direction="0" ShadowDepth="0"/>
+                        </Button.Effect>
                         <Button.Resources>
                             <Style TargetType="{x:Type Border}">
                                 <Setter Property="CornerRadius" Value="8"/>
@@ -201,7 +206,7 @@
                 </LinearGradientBrush>
             </Rectangle.Fill>
         </Rectangle>
-        <Image x:Name="hardwareicon" Margin="48,84,714,328" Source="/Hardware.png">
+        <Image x:Name="hardwareicon" Margin="48,84,714,328" Source="/Hardware.png" MouseDown="hardwareicon_MouseDown">
             <Image.Effect>
                 <DropShadowEffect Color="White" BlurRadius="40" Opacity="0.5" Direction="0"/>
             </Image.Effect>
@@ -217,7 +222,7 @@
                 </LinearGradientBrush>
             </Rectangle.Fill>
         </Rectangle>
-        <Image x:Name="networkicon" Margin="128,84,634,328" Source="/Network.png">
+        <Image x:Name="networkicon" Margin="128,84,634,328" Source="/Network.png" MouseDown="networkicon_MouseDown">
             <Image.Effect>
                 <DropShadowEffect Color="White" BlurRadius="40" Opacity="0.5" Direction="0"/>
             </Image.Effect>
@@ -233,7 +238,7 @@
                 </LinearGradientBrush>
             </Rectangle.Fill>
         </Rectangle>
-        <Image x:Name="latencyicon" Margin="48,162,714,250" Source="/Latency.png">
+        <Image x:Name="latencyicon" Margin="48,162,714,250" Source="/Latency.png" MouseDown="latencyicon_MouseDown">
             <Image.Effect>
                 <DropShadowEffect Color="White" BlurRadius="40" Opacity="0.5" Direction="0"/>
             </Image.Effect>
@@ -249,7 +254,7 @@
                 </LinearGradientBrush>
             </Rectangle.Fill>
         </Rectangle>
-        <Image x:Name="cleanericon" Margin="128,162,634,250" Source="/Cleaner.png">
+        <Image x:Name="cleanericon" Margin="128,162,634,250" Source="/Cleaner.png" MouseDown="cleanericon_MouseDown">
             <Image.Effect>
                 <DropShadowEffect Color="White" BlurRadius="40" Opacity="0.5" Direction="0"/>
             </Image.Effect>
@@ -265,7 +270,7 @@
                 </LinearGradientBrush>
             </Rectangle.Fill>
         </Rectangle>
-        <Image x:Name="systemicon" Margin="48,242,714,170" Source="/System.png">
+        <Image x:Name="systemicon" Margin="48,242,714,170" Source="/System.png" MouseDown="systemicon_MouseDown">
             <Image.Effect>
                 <DropShadowEffect Color="White" BlurRadius="40" Opacity="0.5" Direction="0"/>
             </Image.Effect>
@@ -281,7 +286,7 @@
                 </LinearGradientBrush>
             </Rectangle.Fill>
         </Rectangle>
-        <Image x:Name="tweaksicon" Margin="128,242,634,170" Source="/Tweaks.png">
+        <Image x:Name="tweaksicon" Margin="128,242,634,170" Source="/Tweaks.png" MouseDown="tweaksicon_MouseDown">
             <Image.Effect>
                 <DropShadowEffect Color="White" BlurRadius="40" Opacity="0.5" Direction="0"/>
             </Image.Effect>
@@ -297,7 +302,7 @@
                 </LinearGradientBrush>
             </Rectangle.Fill>
         </Rectangle>
-        <Image x:Name="optimizationicon" Margin="89,328,673,84" Source="/Optimization.png">
+        <Image x:Name="optimizationicon" Margin="89,328,673,84" Source="/Optimization.png" MouseDown="optimizationicon_MouseDown">
             <Image.Effect>
                 <DropShadowEffect Color="White" BlurRadius="40" Opacity="0.5" Direction="0"/>
             </Image.Effect>
