@@ -106,12 +106,40 @@
 
             <TabItem Header="Cleaner">
                 <Grid>
+
                     <Grid.Background>
                         <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                             <GradientStop Color="#FF02030C"/>
                             <GradientStop Color="#FF010104" Offset="1"/>
                         </LinearGradientBrush>
                     </Grid.Background>
+                    <Button x:Name="cleanerbutton" Content="Clean" Margin="0,212,0,0" VerticalAlignment="Top" Height="33" HorizontalAlignment="Center" Width="286" BorderBrush="Black" Foreground="White" Click="disableuacbutton_Click">
+
+                        <Button.Resources>
+                            <Style TargetType="{x:Type Border}">
+                                <Setter Property="CornerRadius" Value="8"/>
+                            </Style>
+                        </Button.Resources>
+                        <Button.Effect>
+                            <DropShadowEffect Color="#FF160086" BlurRadius="50" Direction="0" ShadowDepth="0"/>
+                        </Button.Effect>
+                        <Button.Background>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="#FF1B0A35"/>
+                                <GradientStop Color="#FF0A1023" Offset="1"/>
+                            </LinearGradientBrush>
+                        </Button.Background>
+                    </Button>
+                    <RichTextBox Margin="10,30,10,234">
+                        <FlowDocument>
+                            <Paragraph>
+                                <Run Text="RichTextBox"/>
+                            </Paragraph>
+                        </FlowDocument>
+                    </RichTextBox>
+                    <RadioButton Content="Log Files" Margin="191,262,328,143" Foreground="White"/>
+                    <RadioButton Content="Temp" Margin="268,262,268,143" Foreground="White" RenderTransformOrigin="1.561,-2.283"/>
+                    <RadioButton Content="Clean Cache" Margin="328,262,175,143" Foreground="White"/>
                 </Grid>
             </TabItem>
 
