@@ -214,6 +214,38 @@ namespace RivelFree
             Process.Start("net.exe", "start UsoSvc");
         }
 
+        private void hardwareicon_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            switchwindow(1);
+        }
+
+        private void networkicon_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            switchwindow(2);
+        }
+
+        private void latencyicon_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            switchwindow(3);
+        }
+
+        private void cleanericon_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            switchwindow(4);
+        }
+
+        private void systemicon_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            switchwindow(5);
+        }
+
+        private void tweaksicon_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            switchwindow(6);
+        }
+
+        private void optimizationicon_MouseDown(object sender, MouseButtonEventArgs e) { switchwindow(7); }
+
         // if someone has ddr5 for testing, dm me!
         public string GetMemoryType(int MemoryType)
         {

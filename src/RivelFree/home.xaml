@@ -25,7 +25,7 @@
                         </LinearGradientBrush>
                     </Grid.Background>
                     <Label Content="Your Hardware" HorizontalAlignment="Left" Margin="10,30,0,0" VerticalAlignment="Top" Foreground="White" FontSize="24" RenderTransformOrigin="0.495,0.68"/>
-                    <Rectangle HorizontalAlignment="Left" Height="100" Margin="118,20,0,0" VerticalAlignment="Top" Width="6" RenderTransformOrigin="0.5,0.5">
+                    <Rectangle HorizontalAlignment="Left" Height="100" Margin="116,18,0,0" VerticalAlignment="Top" Width="6" RenderTransformOrigin="0.5,0.5">
                         <Rectangle.Effect>
                             <DropShadowEffect Direction="0" Color="#FF9F2CCC" ShadowDepth="0" BlurRadius="15"/>
                         </Rectangle.Effect>
@@ -69,6 +69,9 @@
                                 <Setter Property="CornerRadius" Value="8"/>
                             </Style>
                         </Button.Resources>
+                        <Button.Effect>
+                            <DropShadowEffect Color="#FF090038" BlurRadius="15" Direction="0" ShadowDepth="0"/>
+                        </Button.Effect>
                         <Button.Background>
                             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                                 <GradientStop Color="#FF1B0A35"/>
