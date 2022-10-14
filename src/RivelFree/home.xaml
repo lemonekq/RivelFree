@@ -113,7 +113,7 @@
                             <GradientStop Color="#FF010104" Offset="1"/>
                         </LinearGradientBrush>
                     </Grid.Background>
-                    <Button x:Name="cleanerbutton" Content="Clean" Margin="0,212,0,0" VerticalAlignment="Top" Height="33" HorizontalAlignment="Center" Width="286" BorderBrush="Black" Foreground="White" Click="cleanerbutton_Click">
+                    <Button x:Name="cleanerbutton" Content="Clean" Margin="0,240,0,0" VerticalAlignment="Top" Height="33" HorizontalAlignment="Center" Width="286" BorderBrush="Black" Foreground="White" Click="cleanerbutton_Click">
 
                         <Button.Resources>
                             <Style TargetType="{x:Type Border}">
@@ -137,9 +137,9 @@
                             </Paragraph>
                         </FlowDocument>
                     </RichTextBox>
-                    <RadioButton x:Name="cleanerlog" Content="Log Files" Margin="191,262,328,143" Foreground="White"/>
-                    <RadioButton x:Name="cleanertemp" Content="Temp" Margin="268,262,268,143" Foreground="White" RenderTransformOrigin="1.561,-2.283"/>
-                    <RadioButton x:Name="cleanercache" Content="Clean Cache" Margin="328,262,175,143" Foreground="White"/>
+                    <RadioButton x:Name="cleanerlog" Content="Log Files" Margin="191,290,328,115" Foreground="White"/>
+                    <RadioButton x:Name="cleanertemp" Content="Temp" Margin="268,290,268,115" Foreground="White" RenderTransformOrigin="1.561,-2.283"/>
+                    <RadioButton x:Name="cleanercache" Content="Clean Cache" Margin="328,290,175,115" Foreground="White"/>
                 </Grid>
             </TabItem>
 
