@@ -222,6 +222,14 @@ namespace RivelFree
         private void tweaksicon_MouseDown(object sender, MouseButtonEventArgs e) { switchwindow(6); }
         private void optimizationicon_MouseDown(object sender, MouseButtonEventArgs e) { switchwindow(7); }
 
+        private void cleanerbutton_Click(object sender, RoutedEventArgs e)
+        {
+            if (cleanerlog.IsChecked == false & cleanertemp.IsChecked == false & cleanercache.IsChecked == false)
+            {
+                MessageBox.Show("You need to check files for this action.");
+            }
+        }
+
         // if someone has ddr5 for testing, dm me!
         public string GetMemoryType(int MemoryType)
         {
