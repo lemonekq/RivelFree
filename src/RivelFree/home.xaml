@@ -140,6 +140,8 @@
                     <RadioButton x:Name="cleanerlog" Content="Log Files" Margin="191,290,328,115" Foreground="White"/>
                     <RadioButton x:Name="cleanertemp" Content="Temp" Margin="268,290,268,115" Foreground="White" RenderTransformOrigin="1.561,-2.283"/>
                     <RadioButton x:Name="cleanercache" Content="Clean Cache" Margin="328,290,175,115" Foreground="White"/>
+                    
+                    <!-- change to checkboxes -->
                 </Grid>
             </TabItem>
 
