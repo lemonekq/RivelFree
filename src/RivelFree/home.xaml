@@ -130,7 +130,7 @@
                             </LinearGradientBrush>
                         </Button.Background>
                     </Button>
-                    <RichTextBox Margin="10,30,10,234">
+                    <RichTextBox x:Name="cleanerlogs" Margin="10,30,10,234">
                         <FlowDocument>
                             <Paragraph>
                                 <Run Text="[Cleaner Logs goes here]"/>

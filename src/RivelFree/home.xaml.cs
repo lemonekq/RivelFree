@@ -5,6 +5,8 @@ using System.Management;
 using System.Net;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Documents;
 using System.Windows.Input;
 
 namespace RivelFree
@@ -232,7 +234,23 @@ namespace RivelFree
                 // main code::clean logs
                 if (cleanerlog.IsChecked == true)
                 {
+                    var proc = new Process
+                    {
+                        StartInfo = new ProcessStartInfo
+                        {
+                            FileName = "cmd.exe",
+                            Arguments = "cd C:/ & del *.log /a /s /q /f",
+                            UseShellExecute = false,
+                            RedirectStandardOutput = true,
+                            CreateNoWindow = true
+                        }
+                    };
 
+                    proc.Start();
+                    while (!proc.StandardOutput.EndOfStream)
+                    {
+                        cleanerlogs.Document.Blocks.Add(new Paragraph(new Run(proc.StandardOutput.ReadLine() + ";")));
+                    }
                 }
 
                 // clean temp
