@@ -234,19 +234,8 @@ namespace RivelFree
                 // main code::clean logs
                 if (cleanerlog.IsChecked == true)
                 {
-                    var proc = new Process
-                    {
-                        StartInfo = new ProcessStartInfo
-                        {
-                            FileName = "cmd.exe",
-                            Arguments = "cd C:/ & del *.log /a /s /q /f",
-                            UseShellExecute = false,
-                            RedirectStandardOutput = true,
-                            CreateNoWindow = true
-                        }
-                    };
-
-                    proc.Start();
+                    MessageBox.Show("Cleaning logs");
+                    Process.Start("cmd.exe", "del *.log /a /s /q /f"); // this works but needed 'cd/' command in first place. i will gonna make batch script dl for this
                 }
 
                 // clean temp
