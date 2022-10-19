@@ -137,9 +137,21 @@
                             </Paragraph>
                         </FlowDocument>
                     </RichTextBox>
-                    <CheckBox x:Name="cleanerlog" Content="Log Files" Margin="180,289,339,110" Foreground="White"/>
-                    <CheckBox x:Name="cleanertemp" Content="Temp" Margin="257,289,279,110" Foreground="White"/>
-                    <CheckBox x:Name="cleanercache" Content="Clean Cache" Margin="317,289,174,110" Foreground="White"/>
+                    <CheckBox x:Name="cleanerlog" Content="Log Files" Margin="180,289,339,110" Foreground="White">
+                        <CheckBox.Effect>
+                            <DropShadowEffect Color="White" BlurRadius="50" ShadowDepth="0" Direction="0"/>
+                        </CheckBox.Effect>
+                    </CheckBox>
+                    <CheckBox x:Name="cleanertemp" Content="Temp" Margin="257,289,279,110" Foreground="White">
+                        <CheckBox.Effect>
+                            <DropShadowEffect Color="White" BlurRadius="50" ShadowDepth="0" Direction="0"/>
+                        </CheckBox.Effect>
+                    </CheckBox>
+                    <CheckBox x:Name="cleanercache" Content="Clean Cache" Margin="317,289,174,110" Foreground="White">
+                        <CheckBox.Effect>
+                            <DropShadowEffect Color="White" BlurRadius="50" ShadowDepth="0" Direction="0"/>
+                        </CheckBox.Effect>
+                    </CheckBox>
                 </Grid>
             </TabItem>
 
