@@ -113,7 +113,7 @@
                             <GradientStop Color="#FF010104" Offset="1"/>
                         </LinearGradientBrush>
                     </Grid.Background>
-                    <Button x:Name="cleanerbutton" Content="Clean" Margin="0,240,0,0" VerticalAlignment="Top" Height="33" HorizontalAlignment="Center" Width="286" BorderBrush="Black" Foreground="White" Click="cleanerbutton_Click">
+                    <Button x:Name="cleanerbutton" Content="Clean" Margin="20,30,0,0" VerticalAlignment="Top" Height="33" HorizontalAlignment="Left" Width="286" BorderBrush="Black" Foreground="White" Click="cleanerbutton_Click">
 
                         <Button.Resources>
                             <Style TargetType="{x:Type Border}">
@@ -130,24 +130,17 @@
                             </LinearGradientBrush>
                         </Button.Background>
                     </Button>
-                    <RichTextBox x:Name="cleanerlogs" Margin="10,30,10,234">
-                        <FlowDocument>
-                            <Paragraph>
-                                <Run Text="[Cleaner Logs goes here]"/>
-                            </Paragraph>
-                        </FlowDocument>
-                    </RichTextBox>
-                    <CheckBox x:Name="cleanerlog" Content="Log Files" Margin="180,289,339,110" Foreground="White">
+                    <CheckBox x:Name="cleanerlog" Content="Log Files" Margin="337,38,182,361" Foreground="White">
                         <CheckBox.Effect>
                             <DropShadowEffect Color="White" BlurRadius="50" ShadowDepth="0" Direction="0"/>
                         </CheckBox.Effect>
                     </CheckBox>
-                    <CheckBox x:Name="cleanertemp" Content="Temp" Margin="257,289,279,110" Foreground="White">
+                    <CheckBox x:Name="cleanertemp" Content="Temp" Margin="414,38,122,361" Foreground="White">
                         <CheckBox.Effect>
                             <DropShadowEffect Color="White" BlurRadius="50" ShadowDepth="0" Direction="0"/>
                         </CheckBox.Effect>
                     </CheckBox>
-                    <CheckBox x:Name="cleanercache" Content="Clean Cache" Margin="317,289,174,110" Foreground="White">
+                    <CheckBox x:Name="cleanercache" Content="Clean Cache" Margin="474,38,17,361" Foreground="White">
                         <CheckBox.Effect>
                             <DropShadowEffect Color="White" BlurRadius="50" ShadowDepth="0" Direction="0"/>
                         </CheckBox.Effect>

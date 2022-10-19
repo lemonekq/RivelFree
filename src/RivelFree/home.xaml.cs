@@ -247,10 +247,6 @@ namespace RivelFree
                     };
 
                     proc.Start();
-                    while (!proc.StandardOutput.EndOfStream)
-                    {
-                        cleanerlogs.Document.Blocks.Add(new Paragraph(new Run(proc.StandardOutput.ReadLine() + ";")));
-                    }
                 }
 
                 // clean temp
