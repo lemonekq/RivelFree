@@ -16,7 +16,8 @@
 We can see later it checks for hwid license, This is an example of bad usage of license system. Someone can just create an almost same server which is giving every time the true value. *We're doing that!
 <br> <br>
 I wrote  an simple response server in expressjs
-```javascript
+
+```
 var s = "JavaScript syntax highlighting";
 alert(s);
 ```
