@@ -35,6 +35,6 @@ Well, the orginal address was https://hwidrivel.glitch.me/checkid?id=hwid
 I will be replacing it with my temp replit address. Avalible at https://replit.com/@lemonekq/rivel-serveremulator#index.js
 <br>  My Server URL: https://rivel-serveremulator.lemonekq.repl.co/
 
-<br>
+<br> <br>
 
-I cannot find the string in batch given on xratatuj discord server. I think it's deleted due to check license. You just can decompile the exe and get raw batch. Then just replace the url with my one, Hope you will use in future and this trick will help you.
+> I cannot find the string in batch given on xratatuj discord server. I think it's deleted due to check license. You just can decompile the exe and get raw batch. Then just replace the url with my one, Hope you will use in future and this trick will help you.
