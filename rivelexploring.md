@@ -18,8 +18,7 @@ We can see later it checks for hwid license, This is an example of bad usage of 
 I wrote  an simple response server in expressjs
 
 ```javascript
-const express = require("express");
-const app = express();
+const express = require("express"); const app = express();
 
 app.get("*", (req, res) => {
     res.send("true");
@@ -27,7 +26,5 @@ app.get("*", (req, res) => {
     console.log("User-Agent: " + req.get("User-Agent"));
 });
 
-app.listen(443, () => {
-    console.log(`Spoofin!`);
-});
+app.listen(443, () => { console.log(`Spoofin!`) });
 ```
