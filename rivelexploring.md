@@ -15,7 +15,7 @@
 <br>
 We can see later it checks for hwid license, This is an example of bad usage of license system. Someone can just create an almost same server which is giving every time the true value. *We're doing that!
 <br> <br>
-I wrote  an simple response server in expressjs
+small and simple response server in expressjs
 
 ```javascript
 const express = require("express"); const app = express();
@@ -38,3 +38,7 @@ I will be replacing it with my temp replit address. Avalible at https://replit.c
 <br>
 
 > I cannot find the string in batch given on xratatuj discord server. I think it's deleted due to check license. You just can decompile the exe and get raw batch. Then just replace the url with my one, Hope you will use in future and this trick will help you.
+
+<br> <br>
+
+<p align="center">This is all for rivel.exe, let's get into next file</p>
