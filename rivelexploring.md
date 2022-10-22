@@ -17,9 +17,17 @@ We can see later it checks for hwid license, This is an example of bad usage of 
 <br> <br>
 I wrote  an simple response server in expressjs
 
-<br>
-
 ```javascript
-var s = "JavaScript syntax highlighting";
-alert(s);
+const express = require("express");
+const app = express();
+
+app.get("*", (req, res) => {
+    res.send("true");
+    console.log("Somenthing connected! \n");
+    console.log("User-Agent: " + req.get("User-Agent"));
+});
+
+app.listen(443, () => {
+    console.log(`Spoofin!`);
+});
 ```
