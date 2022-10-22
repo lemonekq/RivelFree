@@ -28,3 +28,8 @@ app.get("*", (req, res) => {
 
 app.listen(443, () => { console.log(`Spoofin!`) });
 ```
+
+<br>
+Well, the orginal address was ```https://hwidrivel.glitch.me/checkid?id=[<hwid>]``` <br>
+I will be replacing it with my temp replit address. Avalible at https://replit.com/@lemonekq/rivel-serveremulator#index.js
+<br>Server URL: ```https://rivel-serveremulator.lemonekq.repl.co/nigger/balls```
