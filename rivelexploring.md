@@ -14,5 +14,8 @@
 > I found out that, the rivel.exe purpose is to mask the batch and run it, nothing around it. We can see it there ```C:\Windows\system32\cmd.exe /c ""C:\Users\Admin\AppData\Local\Temp\95FB.tmp\Rivel 2.0.bat""```
 <br>
 We can see later it checks for hwid license, This is an example of bad usage of license system. Someone can just create an almost same server which is giving every time the true value. *We're doing that!
-<br>
-I wrote an simple response server in expressjs
+<br> <br>
+I wrote  an simple response server in expressjs
+```js
+var test = "tescior gigancior";
+```
