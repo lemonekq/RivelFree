@@ -41,3 +41,5 @@ I will be replacing it with my temp replit address. Avalible at https://replit.c
 
 <br>
 <p align="center">This is all for rivel.exe, let's get into next file</p>
+
+# SESSION 1 - EXPLORING CHECKING-LESS VERSION "Rivel_2.0_-_odpalaj_tym_loaderem.bat"
