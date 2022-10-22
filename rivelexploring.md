@@ -17,5 +17,6 @@ We can see later it checks for hwid license, This is an example of bad usage of 
 <br> <br>
 I wrote  an simple response server in expressjs
 ```javascript
-var test = "tescior gigancior";
+var s = "JavaScript syntax highlighting";
+alert(s);
 ```
