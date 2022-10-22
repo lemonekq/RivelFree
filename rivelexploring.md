@@ -46,3 +46,5 @@ I will be replacing it with my temp replit address. Avalible at https://replit.c
 > Filename: "Rivel_2.0_-_odpalaj_tym_loaderem.bat". [DOWNLOAD LINK](https://github.com/lemonekq/RivelFree/blob/main/md-files/rivel_sample.zip)
 
 Next step is me trying to deobfuscate this mess. Really you could release it to open-source and skip all of the hate.
+
+<p align="center">I am going to sleep, ending this story next time</p>
