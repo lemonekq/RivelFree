@@ -108,6 +108,7 @@ namespace RivelFree
             {
                 Process.Start("powercfg", @"-import" + '"' + MainWindow.tempdir + download_urls.cpu_pow_filename + '"' + " 000eb144-c3ae-4396-b3f9-556c2c65869a");
             }
+            MessageBox.Show("Done!");
         }
 
         // windowswitcher 1-7/0-6 | messy code warning 🎇
