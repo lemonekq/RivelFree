@@ -102,11 +102,11 @@ namespace RivelFree
             // simplify
             using (var client = new WebClient())
             {
-                client.DownloadFile(download_urls.cpu_pow, MainWindow.tempdir + "cpu.pow");
+                client.DownloadFile(download_urls.cpu_pow, MainWindow.tempdir + download_urls.cpu_pow_filename);
             }
-            if (File.Exists(MainWindow.tempdir + "cpu.pow"))
+            if (File.Exists(MainWindow.tempdir + download_urls.cpu_pow_filename))
             {
-                Process.Start("powercfg", @"-import" + '"' + MainWindow.tempdir + "cpu.pow" + '"' + " 000eb144-c3ae-4396-b3f9-556c2c65869a");
+                Process.Start("powercfg", @"-import" + '"' + MainWindow.tempdir + download_urls.cpu_pow_filename + '"' + " 000eb144-c3ae-4396-b3f9-556c2c65869a");
             }
         }
 
