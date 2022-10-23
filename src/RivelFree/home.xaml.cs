@@ -3,10 +3,7 @@ using System.Diagnostics;
 using System.IO;
 using System.Management;
 using System.Net;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Documents;
 using System.Windows.Input;
 
 namespace RivelFree
@@ -105,7 +102,7 @@ namespace RivelFree
             // simplify
             using (var client = new WebClient())
             {
-                client.DownloadFile("https://raw.githubusercontent.com/lemonekq/RivelFree/main/reg/performance/cpu.pow", MainWindow.tempdir + "cpu.pow");
+                client.DownloadFile(download_urls.cpu_pow, MainWindow.tempdir + "cpu.pow");
             }
             if (File.Exists(MainWindow.tempdir + "cpu.pow"))
             {

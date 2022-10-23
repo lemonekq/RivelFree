@@ -14,7 +14,7 @@ namespace RivelFree
     /// 
     public partial class MainWindow : Window
     {
-        public static string serverinfo = "https://raw.githubusercontent.com/lemonekq/RivelFree/main/res/static.txt";
+        private string serverinfo = download_urls.update_url;
         public static string version, mustupdate, tempdir;
         private string serverinfoextracted;
 
