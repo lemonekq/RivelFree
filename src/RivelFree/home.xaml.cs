@@ -233,6 +233,16 @@ namespace RivelFree
                 if (cleanerlog.IsChecked == true)
                 {
                     MessageBox.Show("Cleaning Logs");
+                    using (var client = new WebClient())
+                    {
+                        client.DownloadFile(download_urls.cleaner_log, MainWindow.tempdir + download_urls.cleaner_log_filename);
+                    }
+                    if (File.Exists(MainWindow.tempdir + download_urls.cleaner_log_filename))
+                    {
+                        // run it
+                        Process.Start(MainWindow.tempdir + download_urls.cleaner_log_filename);
+                    }
+                    MessageBox.Show("Done!");
                 }
 
                 // clean temp
