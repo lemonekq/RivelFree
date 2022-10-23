@@ -231,20 +231,19 @@ namespace RivelFree
                 // main code::clean logs
                 if (cleanerlog.IsChecked == true)
                 {
-                    MessageBox.Show("Cleaning logs");
-                    Process.Start("cmd.exe", "del *.log /a /s /q /f"); // this works but needed 'cd/' command in first place. i will gonna make batch script dl for this
+                    MessageBox.Show("Cleaning Logs");
                 }
 
                 // clean temp
                 if (cleanertemp.IsChecked == true)
                 {
-
+                    MessageBox.Show("Cleaning Temp");
                 }
 
                 // clean cache
                 if (cleanercache.IsChecked == true)
                 {
-
+                    MessageBox.Show("Cleaning Cache");
                 }
             }
         }
