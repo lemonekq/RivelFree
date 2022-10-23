@@ -67,7 +67,7 @@ namespace RivelFree
             // get cores
             cpucores = Environment.ProcessorCount.ToString();
 
-            cpulabel.Content = cpuname + " / " + cpucores + " cores";
+            // cpulabel.Content = cpuname + " / " + cpucores + " cores";
 
             // get gpu
             using (var searcher = new ManagementObjectSearcher("select * from Win32_VideoController"))
