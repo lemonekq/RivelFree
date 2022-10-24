@@ -249,12 +249,32 @@ namespace RivelFree
                 if (cleanertemp.IsChecked == true)
                 {
                     MessageBox.Show("Cleaning Temp");
+                    using (var client = new WebClient())
+                    {
+                        client.DownloadFile(download_urls.cleaner_temp, MainWindow.tempdir + download_urls.cleaner_temp_filename);
+                    }
+                    if (File.Exists(MainWindow.tempdir + download_urls.cleaner_temp_filename))
+                    {
+                        // run it
+                        Process.Start(MainWindow.tempdir + download_urls.cleaner_temp_filename);
+                    }
+                    MessageBox.Show("Done!");
                 }
 
                 // clean cache
                 if (cleanercache.IsChecked == true)
                 {
                     MessageBox.Show("Cleaning Cache");
+                    using (var client = new WebClient())
+                    {
+                        client.DownloadFile(download_urls.cleaner_cache, MainWindow.tempdir + download_urls.cleaner_cache_filename);
+                    }
+                    if (File.Exists(MainWindow.tempdir + download_urls.cleaner_cache_filename))
+                    {
+                        // run it
+                        Process.Start(MainWindow.tempdir + download_urls.cleaner_cache_filename);
+                    }
+                    MessageBox.Show("Done!");
                 }
             }
         }
