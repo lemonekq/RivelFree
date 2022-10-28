@@ -1,6 +1,6 @@
 :: rivel free, made in batch for easier support
 @echo off
-mode 80, 50
+mode 70, 35
 
 :: plugins@start
 SETLOCAL EnableExtensions DisableDelayedExpansion
@@ -106,11 +106,11 @@ goto main
 	   
 :about
 cls
-echo !ESC![35m   _____ ___.                  __   
-echo !ESC![95m  /  _  \\_ I__   ____  __ ___/  I_ 
-echo !ESC![35m /  /_\  \I __ \ /  _ \I  I  \   __\
-echo !ESC![95m/    I    \ \_\ (  '_' )  I  /I  I  
-echo !ESC![35m\____I__  /___  /\____/I____/ I__I  
-echo !ESC![95m        \/    \/                    
+echo                  !ESC![35m   _____ ___.                  __   
+echo                  !ESC![95m  /  _  \\_ I__   ____  __ ___/  I_ 
+echo                  !ESC![35m /  /_\  \I __ \ /  _ \I  I  \   __\
+echo                  !ESC![95m/    I    \ \_\ (  '_' )  I  /I  I  
+echo                  !ESC![35m\____I__  /___  /\____/I____/ I__I  
+echo                  !ESC![95m        \/    \/                    
 pause
 goto main
