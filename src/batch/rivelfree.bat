@@ -49,12 +49,12 @@ cls
 goto main
 
 :network
-echo  _______          __                       __    
-echo  \      \   _____/  I___  _  _____________I  I __
-echo  /   I   \_/ __ \   __\ \/ \/ /  _ \_  __ \  I/ /
-echo /    I    \  ___/I  I  \     (  '_' )  I \/    ' 
-echo \____I__  /\___  '__I   \/\_/ \____/I__I  I__I_ \
-echo         \/     \/                              \/
+echo !ESC![35m  _______          __                       __    
+echo !ESC![95m  \      \   _____/  I___  _  _____________I  I __
+echo !ESC![35m  /   I   \_/ __ \   __\ \/ \/ /  _ \_  __ \  I/ /
+echo !ESC![95m /    I    \  ___/I  I  \     (  '_' )  I \/    ' 
+echo !ESC![35m \____I__  /\___  '__I   \/\_/ \____/I__I  I__I_ \
+echo !ESC![95m         \/     \/                              \/
 
 :latency
 echo .____            __                              
