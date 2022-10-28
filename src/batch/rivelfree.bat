@@ -83,6 +83,7 @@ pause
 goto main
 					   
 :optimization
+cls
 echo !ESC![35m________          __  .__        .__                __  .__               
 echo !ESC![95m\_____  \ _______/  I_I__I _____ I__I____________ _/  I_I__I ____   ____  
 echo !ESC![35m /   I   \\____ \   __\  I/     \I  \___   /\__  \\   __\  I/  _ \ /    \ 
