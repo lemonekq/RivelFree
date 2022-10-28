@@ -1,4 +1,4 @@
-src/RivelFree/obj/*
-src/RivelFree/bin/*
-src/.vs/*
-src/packages/*
+src/c#/RivelFree/obj/*
+src/c#/RivelFree/bin/*
+src/c#/.vs/*
+src/c#/packages/*
