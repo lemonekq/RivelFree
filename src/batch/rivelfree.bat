@@ -38,5 +38,24 @@ echo.
 echo.
 echo.
 GetInput /M %_Var_Box% /H %_Var_Hover%
-if %Errorlevel%==1
+if %Errorlevel%==1 goto network
+if %Errorlevel%==2 goto latency
+if %Errorlevel%==3 goto tweaks
+if %Errorlevel%==4 goto optimization
+if %Errorlevel%==5 goto hardware
+if %Errorlevel%==6 goto about
+:: anti error // close
+cls
+goto main
 
+:network
+
+:latency
+
+:tweaks
+
+:optimization
+
+:hardware
+
+:about
