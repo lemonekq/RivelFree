@@ -17,6 +17,7 @@ cls
 goto main
 
 :main
+cls
 echo !ESC![35m __________.__             .__  ___________                      
 echo !ESC![95m \______   \__I__  __ ____ I  I \_   _____/______   ____   ____   !ESC![0m
 echo !ESC![35m  I       _/  \  \/ // __ \I  I  I    __) \_  __ \_/ __ \_/ __ \  !ESC![0m
@@ -49,6 +50,7 @@ cls
 goto main
 
 :network
+cls
 echo !ESC![35m  _______          __                       __    
 echo !ESC![95m  \      \   _____/  I___  _  _____________I  I __
 echo !ESC![35m  /   I   \_/ __ \   __\ \/ \/ /  _ \_  __ \  I/ /
@@ -56,8 +58,10 @@ echo !ESC![95m /    I    \  ___/I  I  \     (  '_' )  I \/    '
 echo !ESC![35m \____I__  /\___  '__I   \/\_/ \____/I__I  I__I_ \
 echo !ESC![95m         \/     \/                              \/
 pause
+goto main
 
 :latency
+cls
 echo !ESC![35m.____            __                              
 echo !ESC![95mI    I   _____ _/  I_  ____   ____   ____ ___.__.
 echo !ESC![35mI    I   \__  \\   __\/ __ \ /    \_/ ___'   I  I
@@ -65,8 +69,10 @@ echo !ESC![95mI    I___ / __ \I  I \  ___/I   I  \  \___\___  I
 echo !ESC![35mI_______ (____  /__I  \___  '___I  /\___  ' ____I
 echo !ESC![95m        \/    \/          \/     \/     \/\/     
 pause
+goto main
 
 :tweaks
+cls
 echo !ESC![35m___________                      __            
 echo !ESC![95m\__    ___/_  _  __ ____ _____  I  I __  ______
 echo !ESC![35m  I    I  \ \/ \/ // __ \\__  \ I  I/ / /  ___/
@@ -74,6 +80,7 @@ echo !ESC![95m  I    I   \     /\  ___/ / __ \I    '  \___ \
 echo !ESC![35m  I____I    \/\_/  \___  '____  /__I_ \/____  '
 echo !ESC![95m                       \/     \/     \/     \/ 
 pause
+goto main
 					   
 :optimization
 echo !ESC![35m________          __  .__        .__                __  .__               
@@ -83,8 +90,10 @@ echo !ESC![95m/    I    \  I_' '  I I  I  Y Y  \  I/    /  / __ \I  I I  (  '_' 
 echo !ESC![35m\_______  /   __/I__I I__I__I_I  /__/_____ \(____  /__I I__I\____/I___I  /
 echo !ESC![95m        \/I__I                 \/         \/     \/                    \/ 
 pause
+goto main
 
 :hardware
+cls
 echo !ESC![35m  ___ ___                  .___                              
 echo !ESC![95m /   I   \_____ _______  __I _/_  _  _______ _______   ____  
 echo !ESC![35m/    ~    \__  \\_  __ \/ __ I\ \/ \/ /\__  \\_  __ \_/ __ \ 
@@ -92,8 +101,10 @@ echo !ESC![95m\    Y    // __ \I  I \/ /_/ I \     /  / __ \I  I \/\  ___/
 echo !ESC![35m \___I_  /(____  /__I  \____ I  \/\_/  (____  /__I    \___  '
 echo !ESC![95m       \/      \/           \/              \/            \/ 
 pause
+goto main
 	   
 :about
+cls
 echo !ESC![35m   _____ ___.                  __   
 echo !ESC![95m  /  _  \\_ I__   ____  __ ___/  I_ 
 echo !ESC![35m /  /_\  \I __ \ /  _ \I  I  \   __\
@@ -101,3 +112,4 @@ echo !ESC![95m/    I    \ \_\ (  '_' )  I  /I  I
 echo !ESC![35m\____I__  /___  /\____/I____/ I__I  
 echo !ESC![95m        \/    \/                    
 pause
+goto main
