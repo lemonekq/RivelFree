@@ -1,6 +1,6 @@
 :: rivel free, made in batch for easier support
 @echo off
-mode 70, 35
+mode 70, 25
 
 :: plugins@start
 SETLOCAL EnableExtensions DisableDelayedExpansion
