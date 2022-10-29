@@ -7,7 +7,7 @@ src/c#/RivelFree/bin/Release/*.pdb
 src/c#/RivelFree/bin/Release/*.config
 src/c#/RivelFree/bin/Release/RivelFree.exe
 
-src/c#/RivelFree/bin/Release/RivelFreeCompiled.exe
+src/c#/RivelFree/bin/Release/compiled/*
 
 # others
 src/c#/.vs/*
