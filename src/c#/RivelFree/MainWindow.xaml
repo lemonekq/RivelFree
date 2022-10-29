@@ -18,8 +18,8 @@
         <Rectangle x:Name="Rectbg" HorizontalAlignment="Center" Height="350" VerticalAlignment="Center" Width="383">
             <Rectangle.Fill>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="#FF1A35CA"/>
-                    <GradientStop Color="#FFCD21EA" Offset="1"/>
+                    <GradientStop Color="#FF481ACA" Offset="0"/>
+                    <GradientStop Color="#FFEA218F" Offset="1"/>
                 </LinearGradientBrush>
             </Rectangle.Fill>
 
