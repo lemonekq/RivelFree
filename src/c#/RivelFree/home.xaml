@@ -80,25 +80,9 @@
                         </Button.Background>
                     </Button>
                     <Label Content="Statistics" HorizontalAlignment="Left" Margin="10,170,0,0" VerticalAlignment="Top" Foreground="White" FontSize="24" RenderTransformOrigin="0.309,0.685"/>
-                    <Rectangle HorizontalAlignment="Left" Height="94" Margin="59,163,0,0" VerticalAlignment="Top" Width="6" RenderTransformOrigin="0.5,0.5" RadiusX="1.96" RadiusY="1.96">
-                        <Rectangle.Effect>
-                            <DropShadowEffect Direction="0" Color="#FF9F2CCC" ShadowDepth="0" BlurRadius="15"/>
-                        </Rectangle.Effect>
-                        <Rectangle.Fill>
-                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                                <GradientStop Color="#FF681B75"/>
-                                <GradientStop Color="#FF232E8C" Offset="1"/>
-                            </LinearGradientBrush>
-                        </Rectangle.Fill>
-                        <Rectangle.RenderTransform>
-                            <TransformGroup>
-                                <ScaleTransform ScaleX="-1"/>
-                                <SkewTransform/>
-                                <RotateTransform Angle="90"/>
-                                <TranslateTransform/>
-                            </TransformGroup>
-                        </Rectangle.RenderTransform>
-                    </Rectangle>
+                    <Grid Width="290" Height="290">
+                        <Ellipse Height="210" Width="210" Stroke="Aqua" Width="100"/>
+                    </Grid>
                 </Grid>
             </TabItem>
 
@@ -347,7 +331,7 @@
         <Label x:Name="tweakstitle" Content="Tweaks" HorizontalAlignment="Left" Margin="122,286,0,0" VerticalAlignment="Top" Foreground="White" MouseDown="tweakstitle_MouseDown"/>
 
         <!-- Optimization -->
-        <Rectangle Margin="83,322,667,78">
+        <Rectangle Margin="83,322,667,78" RadiusX="10" RadiusY="10">
             <Rectangle.Fill>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#FF132950" Offset="0"/>
