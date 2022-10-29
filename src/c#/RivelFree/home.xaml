@@ -80,9 +80,7 @@
                         </Button.Background>
                     </Button>
                     <Label Content="Statistics" HorizontalAlignment="Left" Margin="10,170,0,0" VerticalAlignment="Top" Foreground="White" FontSize="24" RenderTransformOrigin="0.309,0.685"/>
-                    <Grid Width="290" Height="290">
-                        <Ellipse Height="210" Width="210" Stroke="Aqua" Width="100"/>
-                    </Grid>
+                    <Grid Margin="41,212,413,66"/>
                 </Grid>
             </TabItem>
 
