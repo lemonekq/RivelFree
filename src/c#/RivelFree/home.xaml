@@ -79,6 +79,26 @@
                             </LinearGradientBrush>
                         </Button.Background>
                     </Button>
+                    <Label Content="Statistics" HorizontalAlignment="Left" Margin="10,170,0,0" VerticalAlignment="Top" Foreground="White" FontSize="24" RenderTransformOrigin="0.309,0.685"/>
+                    <Rectangle HorizontalAlignment="Left" Height="94" Margin="59,163,0,0" VerticalAlignment="Top" Width="6" RenderTransformOrigin="0.5,0.5" RadiusX="1.96" RadiusY="1.96">
+                        <Rectangle.Effect>
+                            <DropShadowEffect Direction="0" Color="#FF9F2CCC" ShadowDepth="0" BlurRadius="15"/>
+                        </Rectangle.Effect>
+                        <Rectangle.Fill>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="#FF681B75"/>
+                                <GradientStop Color="#FF232E8C" Offset="1"/>
+                            </LinearGradientBrush>
+                        </Rectangle.Fill>
+                        <Rectangle.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform ScaleX="-1"/>
+                                <SkewTransform/>
+                                <RotateTransform Angle="90"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Rectangle.RenderTransform>
+                    </Rectangle>
                 </Grid>
             </TabItem>
 
@@ -231,7 +251,7 @@
 
         <!-- Buttons -->
         <!-- Hardware -->
-        <Rectangle Margin="42,78,708,322">
+        <Rectangle Margin="42,78,708,322" RadiusX="10" RadiusY="10">
             <Rectangle.Fill>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#FF132950" Offset="0"/>
@@ -247,7 +267,7 @@
         <Label x:Name="hardwaretitle" Content="Hardware" HorizontalAlignment="Left" Margin="36,126,0,0" VerticalAlignment="Top" Foreground="White" MouseDown="hardwaretitle_MouseDown"/>
 
         <!-- Network -->
-        <Rectangle Margin="122,78,628,322">
+        <Rectangle Margin="122,78,628,322" RadiusX="10" RadiusY="10">
             <Rectangle.Fill>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#FF132950" Offset="0"/>
@@ -263,7 +283,7 @@
         <Label x:Name="networktitle" Content="Network" HorizontalAlignment="Left" Margin="119,126,0,0" VerticalAlignment="Top" Foreground="White" MouseDown="networktitle_MouseDown"/>
 
         <!-- Mouse Latency | Latency -->
-        <Rectangle Margin="42,156,708,244">
+        <Rectangle Margin="42,156,708,244" RadiusX="10" RadiusY="10">
             <Rectangle.Fill>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#FF132950" Offset="0"/>
@@ -279,7 +299,7 @@
         <Label x:Name="latencytitle" Content="Latency" HorizontalAlignment="Left" Margin="41,206,0,0" VerticalAlignment="Top" Foreground="White" MouseDown="latencytitle_MouseDown"/>
 
         <!-- Disk Cleaner | Cleaner -->
-        <Rectangle Margin="122,156,628,244">
+        <Rectangle Margin="122,156,628,244" RadiusX="10" RadiusY="10">
             <Rectangle.Fill>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#FF132950" Offset="0"/>
@@ -295,7 +315,7 @@
         <Label x:Name="cleanertitle" Content="Cleaner" HorizontalAlignment="Left" Margin="122,206,0,0" VerticalAlignment="Top" Foreground="White" MouseDown="cleanertitle_MouseDown"/>
 
         <!-- System -->
-        <Rectangle Margin="42,236,708,164">
+        <Rectangle Margin="42,236,708,164" RadiusX="10" RadiusY="10">
             <Rectangle.Fill>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#FF132950" Offset="0"/>
@@ -311,7 +331,7 @@
         <Label x:Name="systemtitle" Content="System" HorizontalAlignment="Left" Margin="42,286,0,0" VerticalAlignment="Top" Foreground="White" MouseDown="systemtitle_MouseDown"/>
 
         <!-- Tweaks -->
-        <Rectangle Margin="122,238,628,162">
+        <Rectangle Margin="122,238,628,162" RadiusX="10" RadiusY="10">
             <Rectangle.Fill>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#FF132950" Offset="0"/>
