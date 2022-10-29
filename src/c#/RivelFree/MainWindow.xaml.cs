@@ -15,7 +15,7 @@ namespace RivelFree
     public partial class MainWindow : Window
     {
         private string serverinfo = download_urls.update_url;
-        public static string version, mustupdate, tempdir;
+        public static string version, mustupdate, tempdir, configdir;
         private string serverinfoextracted;
 
         DispatcherTimer untiload = new DispatcherTimer();
@@ -55,10 +55,14 @@ namespace RivelFree
             // MessageBox.Show(mustupdate); // should return 0 or 1
 
             this.Title = "RivelFree - " + version;
-            tempdir = System.IO.Path.GetTempPath() + "/RivelFree/";
+            tempdir = System.IO.Path.GetTempPath() + "/RivelFreeTemp/";
             CreateFolder(tempdir); // .
             Directory.Delete(tempdir, true);
             CreateFolder(tempdir);
+
+            // make configdirectory for statistics, user related stuff
+            configdir = System.IO.Path.GetTempPath() + "/RivelFreeConfig/";
+            CreateFolder(configdir);
 
             Ping pingSender = new Ping(); PingOptions options = new PingOptions();
             options.DontFragment = true;
