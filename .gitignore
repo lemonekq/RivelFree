@@ -1,4 +1,13 @@
-src/c#/RivelFree/obj/*
-src/c#/RivelFree/bin/*
+# do not release compiled
+src/c#/RivelFree/bin/Debug/*.config
+src/c#/RivelFree/bin/Debug/*.pdb
+src/c#/RivelFree/bin/Debug/RivelFree.exe
+
+src/c#/RivelFree/bin/Release/*.pdb
+src/c#/RivelFree/bin/Release/*.config
+src/c#/RivelFree/bin/Release/RivelFree.exe
+
+# others
 src/c#/.vs/*
 src/c#/packages/*
+src/c#/RivelFree/obj/*
