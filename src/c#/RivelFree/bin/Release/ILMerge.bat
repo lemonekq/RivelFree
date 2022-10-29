@@ -1,1 +1,0 @@
-ILMerge.exe /target:winexe /out:compiled/RivelFreeCompiled.exe RivelFree.exe
